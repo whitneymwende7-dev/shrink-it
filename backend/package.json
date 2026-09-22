@@ -1,0 +1,21 @@
+{
+  "name": "url-shortener-backend",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "node src/index.js",
+    "migrate": "prisma migrate dev --name init"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.18.0",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "express-rate-limit": "^7.4.0",
+    "nanoid": "^5.0.7",
+    "node-cron": "^3.0.3",
+    "valid-url": "^1.0.9"
+  },
+  "devDependencies": {
+    "prisma": "^5.18.0"
+  }
+}
