@@ -8,6 +8,7 @@ import cron from "node-cron";
 
 const prisma = new PrismaClient();
 const app = express();
+app.set("trust proxy", 1);
 app.use(cors());
 app.use(express.json());
 
