@@ -4,6 +4,7 @@
   "type": "module",
   "scripts": {
     "dev": "node src/index.js",
+    "start": "prisma migrate deploy && node src/index.js",
     "migrate": "prisma migrate dev --name init"
   },
   "dependencies": {
